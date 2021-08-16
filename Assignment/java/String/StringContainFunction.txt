@@ -1,0 +1,16 @@
+public class String1 {
+
+	public static void main(String[] args) {
+		String str1 = "How are you?";
+		String str2 = "what";
+		String str3 = "How";
+		System.out.println(" "+str1);
+		System.out.println(" "+str2);
+		System.out.println(" "+str3);
+		System.out.println(str1.contains (str2));
+		System.out.println(str1.contains (str3));
+		
+		
+	}
+}
+
