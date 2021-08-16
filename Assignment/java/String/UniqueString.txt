@@ -1,0 +1,12 @@
+public class StringHash {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str = "Welcome to the world of java programming!";
+		int s = str.hashCode();
+		System.out.println("original string :"+str);
+		System.out.println("unique number :"+s);
+
+	}
+
+}
