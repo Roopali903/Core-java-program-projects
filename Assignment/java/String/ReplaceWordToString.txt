@@ -1,0 +1,13 @@
+public class StringHash {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str = "The quick brown fox jumps over the lazy dog.";
+	         String s = str.replaceAll("fox" , "cat");
+		
+		System.out.println("original string :"+str);
+		System.out.println("unique number :"+s);
+
+	}
+
+}
