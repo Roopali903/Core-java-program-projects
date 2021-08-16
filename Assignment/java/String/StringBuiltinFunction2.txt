@@ -1,0 +1,32 @@
+package EqualsTo;
+
+public class EqualsTo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str1 = "Compare";
+		String str2 = "String";
+		String str3 = "HELLO";
+		String str4 = "HELLO";
+		String str5 = "YOUR";
+		String str6 = "name";
+		String str7 = "welcome to the mini programming world";
+		
+		System.out.println(str1.concat(str2));	
+		System.out.println(str3.equals(str4));
+		System.out.println(str4.equals(str2));
+		System.out.println(str5.equals(str6));
+		System.out.println(str2.charAt(3));
+		System.out.println(str6.toUpperCase());
+		System.out.println(str4.toLowerCase());
+		System.out.println(str7.substring(11));
+		System.out.println(str7.endsWith("World"));
+		System.out.println(str2.length());
+		
+		
+		
+		
+		
+	}
+
+}
