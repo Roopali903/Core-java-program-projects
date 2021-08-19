@@ -1,0 +1,25 @@
+package inheritance;
+interface Mobile {
+	   void into();
+	}
+interface B{
+	void Anroid();
+}
+	class Market implements Mobile {
+	   public void into() {
+	      System.out.println("Mobile version");
+	   }
+	public void Anroid() 
+	{
+		System.out.println("Anroid");
+	}
+	}
+	   
+	public class Multiple {
+	   public static void main(String args[]) {
+	       Market m = new Market();
+	      m.into();
+	      m.Anroid();
+	      
+	   }
+	}
