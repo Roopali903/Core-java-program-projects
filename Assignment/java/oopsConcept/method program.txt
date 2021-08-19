@@ -1,0 +1,30 @@
+package cellphone;
+
+
+public class cellphone {
+
+	 void Mobile(String detailsmodel, String Ram) {
+		System.out.println("model details :"+detailsmodel);	
+		System.out.println("Ram size :"+Ram);	
+	}
+	 
+	void ringing(String r)
+	{
+		System.out.println("Does your phone has ringing feature?"+r);
+	}
+	void ContactNumber(String  Num) {
+		System.out.println("what's your contact Number?"+Num);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		cellphone c = new cellphone();
+		 c.Mobile("redmi4","32GB");
+		 c.ringing(" yes");
+		c.ContactNumber("9039142751");
+		
+		
+
+	}
+
+}
