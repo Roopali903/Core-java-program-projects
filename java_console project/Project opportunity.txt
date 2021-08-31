@@ -1,0 +1,476 @@
+import java.util.Scanner;
+
+class Web
+	{
+		int Index,fees;
+		String Contact_Num, CompanyName, Duration;
+		
+    void Webdevelopment_Add_info()
+    {
+	Scanner sc=new Scanner(System.in);
+    System.out.println("Enter index:");
+  Index=sc.nextInt();
+  System.out.println("Enter Company Name:");
+  CompanyName=sc.next();
+System.out.println("Enter Contact Number:");
+Contact_Num=sc.next();
+System.out.println("Enter Duration:");
+Duration=sc.next();
+System.out.println("Enter Fees:");
+fees = sc.nextInt();
+    }
+    
+    void Webdevelopment_info()
+    {
+    	
+    	System.out.println(Index + "\t" +   CompanyName + "\t" +   Contact_Num+ "\t" +   Duration + "\t\t" + fees ); 
+   }
+	}
+	
+	class Softwaretesting
+	{
+		int SIndex,Sfees;
+		 String SContact_Num , SCompanyName,SDuration;
+
+		
+    void Software_testing_info()
+    {
+	Scanner sc=new Scanner(System.in);
+    System.out.println("Enter index:");
+  SIndex=sc.nextInt();
+  System.out.print("Enter Company Name:");
+  SCompanyName=sc.next();
+System.out.println("Enter Contact Number:");
+SContact_Num=sc.next();
+System.out.println("Enter Duration:");
+SDuration=sc.next();
+System.out.println("Enter Fees:");
+Sfees = sc.nextInt();
+
+    }
+    
+    void SoftwareTestinginfo()
+    {
+    	System.out.println(SIndex + "\t" +   SCompanyName + "\t" +   SContact_Num+ "\t" +   SDuration + "\t\t" + Sfees ); 
+
+	}
+    }
+	
+	class Cybersecurity
+	{
+		int Indexc,feesc;
+		 String CompanyNamec,Durationc,Contact_Numc;
+
+		
+    void CyberSecurity_info()
+    {
+	Scanner sc=new Scanner(System.in);
+    System.out.println("Enter index:");
+  Indexc=sc.nextInt();
+  System.out.println("Enter Company Name:");
+  CompanyNamec=sc.next();
+System.out.println("Enter Contact Number:");
+Contact_Numc=sc.next();
+System.out.println("Enter Duration:");
+Durationc=sc.next();
+System.out.println("Enter Fees:");
+feesc = sc.nextInt();
+    }
+    
+    void Show_CyberSecurity_info()
+    {
+     
+    	System.out.println(Indexc + "\t" +   CompanyNamec + "\t" +   Contact_Numc + "\t" +   Durationc + "\t\t" + feesc ); 
+
+    }
+	}
+	
+	class DataAnalyst
+	{
+		int index,feesd;
+		 String CompanyNamed,Durationd,ContactNumber;
+  
+		
+    void NewEntry_DataAnalyst()
+    {
+	Scanner sc=new Scanner(System.in);
+    System.out.println("Enter index:");
+  index=sc.nextInt();
+  System.out.println("Enter Company Name:");
+  CompanyNamed=sc.next();
+System.out.println("Enter Contact Number:");
+ContactNumber=sc.next();
+System.out.println("Enter Duration:");
+Durationd=sc.next();
+ System.out.println("Enter fees:");
+feesd=sc.nextInt();
+ 
+	}
+    
+    void Show_DataAnalyst()
+    {
+    	
+    	    System.out.println(index + "\t" +   CompanyNamed + "\t" +   ContactNumber+ "\t" +   Durationd + "\t\t" + feesd ); 
+	}
+	}
+	
+	
+	public class  OpportunityCircLEProject
+	{	 
+	public static void main(String[] args) {
+		int j,count1=5,count2=5,count3=5,count4=5,count5=5;
+		int i;
+		Web[] w = new Web[25];
+        for (i = 0; i < 25; i++)
+            w[i] = new Web();
+        
+        Softwaretesting[] s =new Softwaretesting[100];
+        for (i = 0; i < 100; i++) {
+            s[i] = new Softwaretesting();
+        }
+       Cybersecurity[] c =new Cybersecurity [100];
+       
+        for (i = 0; i < 100; i++) {
+            c[i] = new  Cybersecurity();
+        }
+       DataAnalyst[] d=new DataAnalyst[100];
+        for (i = 0; i < 100; i++)
+            d[i] = new DataAnalyst();
+        
+   
+		w[0].Index = 1;
+		w[0].CompanyName = "Sunshine";
+		w[0].Contact_Num="9039342146";
+		w[0].Duration= "3 month";
+		w[0].fees = 4000;
+		
+		w[1].Index = 2;
+		w[1].CompanyName = "Softskill";
+		w[1].Contact_Num="7417753590";
+		w[1].Duration= "2 month";
+		w[1].fees = 2500;
+		
+		w[2].Index = 3;
+		w[2].CompanyName = "TapAcademy";
+		w[2].Contact_Num="8982345887";
+		w[2].Duration= "6 month";
+		w[2].fees = 5000;
+		
+		w[3].Index = 4;
+		w[3].CompanyName = "CheeryBlossom";
+		w[3].Contact_Num="7415247118";
+		w[3].Duration= "2 month";
+		w[3].fees = 4000 ;
+		
+		w[4].Index = 5;
+		w[4].CompanyName = "PremaSoftware";
+		w[4].Contact_Num="9956888790";
+		w[4].Duration= "4 month";
+		w[4].fees = 4000 ;
+		
+		s[0].SIndex = 1;
+		s[0].SCompanyName = "Microacademy";
+		s[0].SContact_Num= "9993920499";
+		s[0].SDuration= "2 month";
+		s[0].Sfees = 3000;
+		
+		s[1].SIndex = 2;
+		s[1].SCompanyName = "skillset";
+		s[1].SContact_Num= "9039149067";
+		s[1].SDuration= "2 month";
+		s[1].Sfees = 2500;
+		
+		s[2].SIndex = 3;
+		s[2].SCompanyName = "Brainlykart";
+		s[2].SContact_Num= "7954664202";
+		s[2].SDuration= "3 month";
+		s[2].Sfees = 6000;
+  
+		s[3].SIndex = 3;
+		s[3].SCompanyName = "Torrent";
+		s[3].SContact_Num= "6454678202";
+		s[3].SDuration= "6 month";
+		s[3].Sfees = 8000;
+  
+		s[3].SIndex = 4;
+		s[3].SCompanyName = "Newtontech";
+		s[3].SContact_Num= "7984668103";
+		s[3].SDuration= "5 month";
+		s[3].Sfees = 7000;
+		
+		s[4].SIndex = 5;
+		s[4].SCompanyName = "Dev System";
+		s[4].SContact_Num= "8884560807";
+		s[4].SDuration= "8 month";
+		s[4].Sfees = 40000;
+		
+		c[0].Indexc = 1;
+		c[0].CompanyNamec = "IBS Global";
+		c[0].Contact_Numc= "9045785641";
+		c[0].Durationc= "5 month";
+		c[0].feesc = 4500;
+		
+		c[1].Indexc = 2;
+		c[1].CompanyNamec = "curzon soft.";
+		c[1].Contact_Numc="8934672885";
+		c[1].Durationc= "3 month";
+		c[1].feesc = 7000;
+		
+		c[2].Indexc = 3;
+		c[2].CompanyNamec = "The maverick";
+		c[2].Contact_Numc="7415236224";
+		c[2].Durationc= "4 month";
+		c[2].feesc = 3000;
+		
+		c[3].Indexc = 4;
+		c[3].CompanyNamec = "oreno ltd.";
+		c[3].Contact_Numc="8984357862";
+		c[3].Durationc= "5 month";
+		c[3].feesc = 6000;
+		
+		c[4].Indexc = 5;
+		c[4].CompanyNamec = "eduonics";
+		c[4].Contact_Numc="8934672885";
+		c[4].Durationc= "4 month";
+		c[4].feesc = 3500;
+		
+		
+
+         d[0].index = 1;
+		d[0].CompanyNamed = "Blunt ideas";
+		d[0].ContactNumber= "9764648635";
+		d[0].Durationd= "4 month";
+		d[0].feesd = 8000;
+		
+		d[1].index = 2;
+		d[1].CompanyNamed = "Haider academy";
+		d[1].ContactNumber=  "8884562450";
+		d[1].Durationd = "2 month";
+		d[1].feesd = 2500;
+		
+		
+		d[2].index = 3;
+		d[2].CompanyNamed = "North eagel";
+		d[2].ContactNumber=  "9974295690";
+		d[2].Durationd = "7 month";
+		d[2].feesd = 9000;
+		
+		d[3].index = 4;
+		d[3].CompanyNamed = "Truth adviser";
+		d[3].ContactNumber=  "8985673445";
+		d[3].Durationd = "2 month";
+		d[3].feesd = 5000;
+		
+		d[4].index = 5;
+		d[4].CompanyNamed = "Sucess service";
+		d[4].ContactNumber=  "7962347664";
+		d[4].Durationd = "8 month";
+		d[4].feesd = 8000;
+		
+		int ch,S=1,S1,S2,S3,S4,S5;
+		Scanner sc=new Scanner(System.in);
+        
+		while(S==1)
+		{
+		System.out.println("|=================================+***WELCOME***+==============================|");
+		System.out.println("|))))))))))))))))))))))))))))||||||OpportunityCircle|||||))))))))))))))))))))))))");
+		System.out.println("                                                    ");
+		System.out.println("***welcome! to the platform of training and job opportunity***");
+		System.out.println("=================================================================");
+		System.out.println("1.Web development  2. Software testing  3.Cyber Security  4. Data Analyst ");
+		System.out.println("<<==========================================================================>>");
+		System.out.println("Enter your choice");
+		ch=sc.nextInt();
+		switch(ch)
+		{
+		case 1:
+		{
+			System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+			System.out.println("                    **Webdevelopment Opportunity**                ");
+			System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");	
+			S1=1;
+			while(S1==1)
+			{
+			System.out.println("1.Add your organisation");
+			System.out.println("2.Check Available Opportunities");
+			System.out.println("enter Your choice");
+			int ch1=sc.nextInt();
+			
+			switch(ch1)
+			{
+			case 1:
+			{
+				w[count1]. Webdevelopment_Add_info ();
+				count1++;
+				System.out.println("Index\t  \tCompanyName\t   \tContact_Num\t \t Duration\t  fees"); 
+				   for (j = 0; j < count1; j++)
+	               {
+	                   w[j]. Webdevelopment_info ();
+	               }
+				break;
+			}
+			case 2:
+			{
+				
+				System.out.println(".......................................................................");
+				System.out.println("Index  CompanyName    Contact_Num \t Duration   \tfees"); 
+			   for (j = 0; j < count1; j++)
+               {
+                   w[j]. Webdevelopment_info ();
+               }
+			   break;
+			}
+			}
+			 System.out.println("\nReturn to Back Press 1 and for Main Menu Press 0");
+             S1 = sc.nextInt();
+			}
+			break;
+		}
+		case 2:
+		{
+			System.out.println("#############################################################");
+			System.out.println("                    **Software Testing jobs**               ");
+			System.out.println("##############################################################");	
+			S2=1;
+			while(S2==1)
+			{
+			System.out.println("1.Add your organisation");
+			System.out.println("2.view list of companies/Institutes");
+			System.out.println("enter your choice");
+			int ch1=sc.nextInt();
+			
+			switch(ch1)
+			{
+			case 1:
+			{
+				s[count2].Software_testing_info();
+				count2++;
+				System.out.println("<<<<============================================================>>>>");
+				System.out.println("Index\t  \tCompanyName\t  \tContact_Num\t \tDuration\t fees");
+				
+			   for (j = 0; j < count2; j++)
+	           {
+	               s[j].SoftwareTestinginfo();
+	           }
+				break;
+			}
+			case 2:
+			{
+				System.out.println("<<<================================================================>>>");
+				System.out.println("Index   CompanyName     Contact_Num \t Duration  \tfees"); 
+			   for (j = 0; j < count2; j++)
+	           {
+	               s[j].SoftwareTestinginfo();
+	           }
+			   break;
+			}
+			}
+			 System.out.println("\nReturn to Back Press 1 and for Main Menu Press 0");
+	         S2 = sc.nextInt();
+			}
+		break;	
+		}
+		
+		case 3:
+		{
+			System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+			System.out.println("                    **Cyber Secuirty**               ");
+			System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");	
+			S3=1;
+			while(S3==1)
+			{
+			System.out.println("1.Add New Entry");
+			System.out.println("2.Check Available Opportunity");
+			System.out.println("enter ur choice");
+			int ch1=sc.nextInt();
+			
+			switch(ch1)
+			{
+			case 1:
+			{
+				c[count3]. CyberSecurity_info ();
+				count3++;
+				System.out.println(".......................................................................");
+				System.out.println("Indexc\t \tCompanyNamec\t  \tContact_Numc\t  \tDurationc\t feesc");
+				
+			   for (j = 0; j < count3; j++)
+	           {
+	               c[j].Show_CyberSecurity_info();
+	           }
+				break;
+			}
+			case 2:
+			{
+				System.out.println(".......................................................................");
+				System.out.println("Index   CompanyName   \tContact_Num  \tDuration \tfees"); 
+			   for (j = 0; j < count3; j++)
+	           {
+	               c[j].Show_CyberSecurity_info();
+	           }
+			   break;
+			}
+			}
+			 System.out.println("\nReturn to Back Press 1 and for Main Menu Press 0");
+	         S3 = sc.nextInt();
+			}
+		break;	
+		}
+		
+		case 4:
+		{
+			System.out.println("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%");
+			System.out.println("                    **Data Analyst**               ");
+			System.out.println("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%");	
+			S4=1;
+			while(S4==1)
+			{
+			System.out.println("1.Add New Entry");
+			System.out.println("2.Existing  list");
+			System.out.println("enter ur choice");
+			int ch1=sc.nextInt();
+			
+			switch(ch1)
+			{
+			case 1:
+			{
+				d[count4].NewEntry_DataAnalyst();
+				count4++;
+				System.out.println(".......................................................................");
+				System.out.println("index\t  \tCompanyNamed\t  \t ContactNumberd\t \t Durationd\t feesd"); 
+			   for (j = 0; j < count4; j++)
+	           {
+	               d[j].Show_DataAnalyst();
+	           }
+				break;
+			}
+			case 2:
+			{
+				System.out.println(".......................................................................");
+				System.out.println("Index  CompanyNamed  \tContactNumber \tDurationd  \tfeesd"); 
+			   for (j = 0; j < count4; j++)
+	           {
+	               d[j]. Show_DataAnalyst ();
+	           }
+			   break;
+			}
+			}
+			 System.out.println("\nReturn to Back Press 1 and for Main Menu Press 0");
+	         S4 = sc.nextInt();
+			}
+		break;	
+		}
+		
+		  default:
+          {
+              System.out.println(" You Have Enter Wrong Choice!!");
+          }
+  }
+  System.out.println("\nReturn to MAIN MENU Press 1");
+  S = sc.nextInt();
+}
+}
+	
+}
+	
+
+	
