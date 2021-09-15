@@ -1,0 +1,24 @@
+import java.util.*;
+public class LinkedList1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LinkedList<Integer> item = new LinkedList<Integer>();
+		item.add(35);
+		item.add(16);
+		item.add(12);
+		item.add(19);
+		item.add(20);
+		System.out.println(item);
+		//item.add(2, 45);
+		//System.out.println(item);
+		
+		
+		Iterator i = item.descendingIterator();
+		while(i.hasNext()) {
+			System.out.println(i.next());
+		}
+		
+	}
+
+}

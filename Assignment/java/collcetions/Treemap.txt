@@ -1,0 +1,26 @@
+package one;
+import java.util.*;
+public class TreeMap1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		TreeMap<Integer,String> Chocalate = new TreeMap<Integer,String>();
+		Chocalate.put(1,"DairyMilk");
+	    Chocalate.put(2,"Kitkat");
+		Chocalate.put(3,"5 Star");
+		Chocalate.put(4,"Perk");
+		System.out.println(Chocalate);
+		System.out.println(Chocalate.descendingMap());
+		System.out.println(Chocalate.containsKey(4));
+		System.out.println(Chocalate.containsValue("5 Star"));
+		System.out.println(Chocalate.containsKey(2));
+		System.out.println(Chocalate.get(3));
+		System.out.println(Chocalate.hashCode());
+		System.out.println(Chocalate.pollLastEntry());
+		System.out.println(Chocalate.isEmpty());
+		System.out.println(Chocalate.size());
+		System.out.println(Chocalate.lowerEntry(4));
+		
+	}
+
+}

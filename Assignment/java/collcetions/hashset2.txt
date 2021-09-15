@@ -1,0 +1,20 @@
+import java.util.*;
+public class HashList1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashSet<Integer> item = new <Integer> HashSet();
+		
+		item.add(78);
+		item.add(88);
+		item.add(58);
+		item.add(78);
+		item.add(99);
+		 Iterator i = item.iterator();
+		 while(i.hasNext());{
+			 System.out.println(i.next());
+		 }
+
+	}
+
+}

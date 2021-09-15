@@ -1,0 +1,23 @@
+import java.util.*;
+public class LinkedHashset1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LinkedHashSet<String> Student = new LinkedHashSet<String>();
+ Student.add("neema");
+ Student.add("hena");
+ Student.add("nilesh");
+ Student.add("nishant");
+ Student.add("jack");
+ System.out.println(Student);
+ Student.addAll(Student);
+System.out.println(Student.contains("hena"));
+Student.clone();
+System.out.println(Student);
+
+System.out.println(Student.removeAll(Student));
+System.out.println(Student.spliterator());
+
+	}
+
+}

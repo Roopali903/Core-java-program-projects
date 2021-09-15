@@ -1,0 +1,28 @@
+import java.util.*;
+import java.util.function.BiFunction;
+public class HashMap1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashMap<Integer , String> Book = new HashMap<Integer , String>();
+		Book.put(1, "data Structure");
+		Book.put(2, "Software engineering");
+		Book.put(3, "English");
+		System.out.println(Book.containsKey(1));
+		System.out.println(Book.get(1));
+		System.out.println(Book.values());
+		System.out.println(Book.size());
+		
+		System.out.println(Book);
+		Set<Integer> Keys = Book.keySet();
+		for(int i: Keys) {
+			System.out.println(i+ " "+Book.get(i));
+		}
+			Set<Map.Entry<Integer, String>> keys = Book.entrySet();
+			for(Map.Entry<Integer, String> i:keys) {
+				System.out.println(i.getKey()+" "+i.getValue());
+			}
+		}
+
+	}
+

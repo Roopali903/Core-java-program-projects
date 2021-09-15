@@ -1,0 +1,27 @@
+import java.util.*;
+import java.util.function.IntFunction;
+public class PriorityQueue1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		PriorityQueue<Integer> item = new PriorityQueue<Integer>();
+		item.add(56);
+		item.add(88);
+		item.add(77);
+		item.add(98);
+		item.add(76);
+		item.add(89);
+		item.comparator();
+		System.out.println(item);
+		Object [] a = item.toArray();
+		for(Object i : a) {
+			System.out.println(i);
+		}
+		//System.out.println(item.addAll(item));
+		
+		System.out.println(item);
+
+
+	}
+
+}

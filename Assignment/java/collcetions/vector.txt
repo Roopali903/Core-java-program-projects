@@ -1,0 +1,26 @@
+package one;
+import java.util.*;
+public class Treeset1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		TreeSet<Integer> item = new TreeSet<Integer>();
+		item.add(12);
+		item.add(18);
+		item.add(44);
+		item.add(35);
+		item.add(36);
+		item.add(12);
+		System.out.println(item);
+		item.addAll(item);
+		System.out.println(item.comparator());
+		System.out.println(item.contains(44));
+		System.out.println(item.contains(75));
+		System.out.println(item.equals(5));
+		System.out.println(item.clone());
+		
+		
+ 
+	}
+
+}

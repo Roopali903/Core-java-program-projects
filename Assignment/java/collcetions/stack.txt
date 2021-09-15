@@ -1,0 +1,23 @@
+
+import java.util.*;
+
+public class PriorityQueue2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		PriorityQueue<String> Student = new PriorityQueue<String>();
+		Student.add("hema");
+		Student.add("rohi");
+		Student.add("reema");
+		Student.add("ronit");
+		Iterator i = Student.iterator();
+		while(i.hasNext());
+		{
+			System.out.println(i.next());
+			
+		}
+	    System.out.println(Student);
+	    
+	}
+
+}

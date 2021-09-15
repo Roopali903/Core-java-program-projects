@@ -1,0 +1,30 @@
+package one;
+
+import java.util.*;
+
+public class Arrlist {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<Integer> item = new ArrayList<Integer>();
+
+		item.add(78);
+		item.add(72);
+		item.add(88);
+		item.add(95);
+		item.add(76);
+		System.out.println(item);
+		
+		item.add(1, 35);
+		System.out.println("after insertion :"+ item);
+		
+		System.out.println("size of array list :" + item.size());
+		//item.ensureCapacity();
+		//System.out.print(item.ensureCapacity());
+		
+	System.out.println(item.hashCode());
+   //item.trimToSize();
+  //System.out.println(item.trimToSize(3);
+	}
+
+}

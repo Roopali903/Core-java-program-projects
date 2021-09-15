@@ -1,0 +1,26 @@
+import java.util.*;
+public class Hashh {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashSet<Integer> item =  new HashSet<Integer>();
+		item.add(78);
+		item.add(88);
+		item.add(58);
+		item.add(78);
+		item.add(99);
+		System.out.println(item);
+		item.add(55);
+		System.out.println(item);
+		item.add(35);
+		System.out.println(item);
+		item.addAll(item);
+		System.out.println(item);
+		item.clone();
+		System.out.println(item);
+		System.out.println(item.contains(88));
+		item.clear();
+		System.out.println(item);
+	}
+
+}

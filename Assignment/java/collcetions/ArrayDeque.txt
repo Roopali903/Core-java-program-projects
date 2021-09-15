@@ -1,0 +1,27 @@
+package one;
+import java.util.*;
+public class ArrDQ {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayDeque<Integer> item = new <Integer>ArrayDeque();
+		item.add(45);
+		item.add(40);
+		item.add(15);
+		item.add(35);
+
+		item.removeFirst();
+		System.out.println(item);
+		item.addFirst(78);
+		item.addLast(99);
+		
+		System.out.println(item);
+		System.out.println("clone :"+item.clone());
+		item.contains(40);
+		item.containsAll(item);
+		System.out.println("item :"+item.contains(40));
+		System.out.println(" "+item.getFirst());
+
+	}
+
+}

@@ -1,0 +1,74 @@
+import java.util.*;
+public class one {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LinkedList<Integer> item = new LinkedList<Integer>();
+
+		item.add(78);
+		item.add(72);
+		item.add(88);
+		item.add(95);
+		item.add(76);
+		
+		item.add(1, 35);
+		System.out.println(item);
+	    item.listIterator(2);
+		System.out.println(item);
+		item.push(99);
+		System.out.println(item);
+		item.set(3, 99);
+		System.out.println(item);
+		item.addLast(55);
+		System.out.println(item);
+		//item.
+		//System.out.println("j" +item.element());
+		//System.out.println(item);
+		//item.clear();
+		//System.out.println(item);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		System.out.println(item.contains(72));
+		 
+    
+        System.out.println(item.size());
+        item.add(2, 45);
+         
+         System.out.println(item);
+         
+        System.out.println(item.remove(2));
+         
+       item.set(3,66);
+        item.get(2);
+         System.out.println("get item"+item);
+         
+         System.out.println(item);
+         
+        Collections.sort(item);
+         
+         Collections.reverse(item);
+         
+         System.out.println("Maximum Number "+Collections.max(item));
+         
+        System.out.println("Minimum Number" +Collections.min(item));
+        
+         
+ 		
+		Iterator j = item.iterator();
+		while(j.hasNext()) {
+			System.out.println(j.next());
+			
+		}
+		
+
+	}
+
+}
